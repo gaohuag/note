@@ -68,9 +68,9 @@
 │       ├── Request.php
 │       ├── TopicRequest.php
 │       └── UserRequest.php
-├── Jobs
+├── Jobs **任务类**
 │   └── TranslateSlug.php 将话题标题翻译为 Slug
-├── Listeners
+├── Listeners **监听者**
 │   └── PushNotification.php 推送ios消息
 ├── Models **模型**
 │   ├── Category.php
@@ -83,14 +83,14 @@
 │   │   ├── ActiveUserHelper.php
 │   │   └── LastActivedAtHelper.php
 │   └── User.php
-├── Notifications
+├── Notifications **通知**
 │   └── TopicReplied.php 通知作者话题有新回复
-├── Observers **定义观察者**
+├── Observers **定义模型观察者**
 │   ├── LinkObserver.php
 │   ├── ReplyObserver.php
 │   ├── TopicObserver.php
 │   └── UserObserver.php
-├── Policies **授权策略**
+├── Policies **定义模型授权策略**
 │   ├── Policy.php
 │   ├── ReplyPolicy.php
 │   ├── TopicPolicy.php
@@ -115,16 +115,16 @@
     └── UserTransformer.php
 
 ## database目录结构
-├── factories 模型工厂定义
+├── factories **模型工厂定义**
 │   ├── LinkFactory.php
 │   ├── ReplyFactory.php
 │   ├── TopicFactory.php
 │   └── UserFactory.php
-├── migrations ddl语句定义
+├── migrations **ddl语句定义**
 │   ├── 2014_10_12_000000_create_users_table.php
 │   ├── 2014_10_12_100000_create_password_resets_table.php
 │   ├── 2017_10_31_164855_add_avatar_and_introduction_to_users_table.php
-└── seeds 使用模型工厂生成假数据
+└── seeds **使用模型工厂生成假数据**
     ├── DatabaseSeeder.php
     ├── LinksTableSeeder.php
     ├── ReplysTableSeeder.php
