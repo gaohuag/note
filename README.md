@@ -1,6 +1,6 @@
-# note
-Name | Academy | score 
-- | :-: | -: 
-Harry Potter | Gryffindor| 90 
-Hermione Granger | Gryffindor | 100 
-Draco Malfoy | Slytherin | 90
+---
+order: 0
+title:
+  zh-CN: 按钮类型
+  en-US: Type
+---
